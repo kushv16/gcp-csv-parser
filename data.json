@@ -1,0 +1,41 @@
+{
+  "resultsWithRank": [
+    {
+      "Rank": 1,
+      "Student Name": "Aditya Agrawal",
+      "# of Skill Badges Completed in Track 1": "3/6",
+      "# of Skill Badges Completed in Track 2": "1/6",
+      "id": 0
+    },
+    {
+      "Rank": 2,
+      "Student Name": "Kush Vora",
+      "# of Skill Badges Completed in Track 1": "1/6",
+      "# of Skill Badges Completed in Track 2": "1/6",
+      "id": 1
+    },
+    {
+      "Rank": 2,
+      "Student Name": "Dummy1",
+      "# of Skill Badges Completed in Track 1": "1/6",
+      "# of Skill Badges Completed in Track 2": "1/6",
+      "id": 2
+    },
+    {
+      "Rank": 3,
+      "Student Name": "Dummy2",
+      "# of Skill Badges Completed in Track 1": "0/6",
+      "# of Skill Badges Completed in Track 2": "0/6",
+      "id": 3
+    },
+    {
+      "Rank": 4,
+      "Student Name": "Dummy3",
+      "# of Skill Badges Completed in Track 1": "0/6",
+      "# of Skill Badges Completed in Track 2": "0/6",
+      "id": 4
+    }
+  ],
+  "buildDate": "14/12/2021, 16:53:58",
+  "institute": "Indian Institute of Information Technology - Raichur"
+}
