@@ -1,5 +1,10 @@
 const fs = require("fs");
 
+/**
+ * This function writes down the JSON in a file
+ * @param {Object} resultsWithRank JSON object with rank
+ * @param {String} institute Institude Name
+ */
 const writeFile = (resultsWithRank, institute) => {
   fs.writeFile(
     "data.json",
@@ -17,6 +22,11 @@ const writeFile = (resultsWithRank, institute) => {
   );
 };
 
+/**
+ * This function deletes keys which need to be excluded from the leaderboard
+ * @param {Object} results 
+ * @returns JSON with unwanted entries
+ */
 const deleteUnwantedEntries = (results) => {
   let id = 0;
   results.forEach((result) => {
@@ -29,6 +39,13 @@ const deleteUnwantedEntries = (results) => {
     return results;
 };
 
+/**
+ * This function is used to sort entries based on number of tracks completed in the program
+ * @param {Object} results 
+ * @param {String} track1 Name of track1
+ * @param {String} track2 Name of track2
+ * @returns Sorted JSON
+ */
 const sortEntries = (results, track1, track2) => {
   results.sort(
     (a, b) =>
@@ -41,6 +58,13 @@ const sortEntries = (results, track1, track2) => {
   return results;
 };
 
+/**
+ * This function calculates rank of a candidate based on the number of tracks completed
+ * @param {Object} results 
+ * @param {String} track1 Name of track1
+ * @param {String} track2 Name of track2
+ * @returns JSON with calculated ranks
+ */
 const giveRankToCandidates = (results, track1, track2) => {
   let rank = 1;
 
